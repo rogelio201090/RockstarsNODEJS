@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  div#login.full-width
+    div.container.full-width.full-height
+      div.row
+        form
+          fieldset
+            a.btn.btn-facebook(href="/auth/facebook")
+              i.icon.fab.fa-facebook
+              span= "Login with Facebook"
+          fieldset
+            a.btn.btn-spotify(href="/auth/spotify")
+              i.icon.fab.fa-spotify
+              span= "Login with Spotify"

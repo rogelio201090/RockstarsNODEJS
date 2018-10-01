@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  div.container.full-width
+    h1= title
+    p Welcome to #{title}
+    div#messages
+      ul#message-list.messages-list
+      div.messages-bottom
+        div#writing-message.hidden Someone is writing...
+        input#message(placeholder="Write your message...")
+        a.btn#message-send Send

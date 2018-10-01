@@ -1,0 +1,27 @@
+div#header
+    div.container.full-width
+        div.row
+            h1
+             a(href="/")
+                span= appTittle
+            span.flex.flex-1
+            ul.menu
+                li
+                  a(href="")
+                    span Home
+                if user
+                    li.dropdown
+                        img.user(src=""+user.photos)
+                        ul.dropdown-menu
+                         li
+                            a(href="/profile")
+                                span= user.displayName
+                        li
+                         a(href="/logout")
+                            span Logout
+                else
+                  li
+                   a(href="/login")
+                    span Login
+
+

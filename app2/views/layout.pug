@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous")
+    script(src="https://code.jquery.com/jquery-1.11.1.js")
+    script(src="http://localhost:4201/livereload.js")
+    script(src="/socket.io/socket.io.js")
+    if user
+      script.
+        var user = {
+          name: `#{user.displayName}`,
+          img: `#{user.photos}`
+        }
+    script(src="/javascripts/main.js")
+    block styles
+    block scripts
+  body(onload="documentReady()")
+    include partials/header
+    div.flex.flex-1#content
+      block content
+    include partials/footer

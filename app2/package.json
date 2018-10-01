@@ -1,0 +1,30 @@
+{
+  "name": "app2",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "rocks": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "express-session": "^1.15.6",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "passport": "^0.4.0",
+    "passport-spotify": "^1.0.1",
+    "pug": "2.0.0-beta11",
+    "socket.io": "^2.1.1",
+    "spotify": "^0.3.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "load-grunt-tasks": "^4.0.0",
+    "nodemon": "^1.18.4"
+  }
+}
